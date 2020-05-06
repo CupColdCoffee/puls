@@ -1,0 +1,57 @@
+@media(max-width: 991px){
+    .promo{
+        &__wrapper{
+        padding-right: 18px;
+            h1{
+                font-size: 40px;
+            }
+            h2{
+                font-size: 22px;
+            }
+        }
+    }
+    .header{
+        &__contacts{
+            padding-right: 18px;
+        }
+        &__oficials{
+            padding-right: 27px;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .promo{
+        &__wrapper{
+            padding-right: 20px;
+            h1{
+                font-size: 35px;
+            }
+            h2{
+                font-size: 21px;
+            }
+        }
+    }
+    .header{
+        &__logo{
+            padding-left: 13px;
+        }
+    }
+}
+
+@media(max-width: 576px){
+    .promo{
+        &__wrapper{
+            display: flex;
+            align-items: center;;
+        }
+    }
+    .header{
+        &__oficials{
+            display: none;
+        }
+        &__logo{
+            padding-left: 13px;
+        }
+    }
+}

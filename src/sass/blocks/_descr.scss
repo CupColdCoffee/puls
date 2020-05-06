@@ -1,0 +1,39 @@
+.descr{
+    min-height: 470px;
+    padding: 70px 195px 78px 196px;
+    background: url(../../img/figura_1_76.png);
+        &__advantage{
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__description{
+        max-width: 258px;
+        max-height: 231px;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #0d0d0d;
+        text-align: center;
+        // img{
+        //     max-height: 70px;
+        //     max-width: 70px;
+        // }
+        a{
+            text-decoration: underline;
+            color: #ff0000;
+        }
+        &_animated {
+            animation: heartbeat 3s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+    &__subheader{
+        margin: 28px 0 25px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #0d0d0d;
+    }
+}
