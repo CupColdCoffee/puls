@@ -41,29 +41,29 @@ gulp.task('html', function() {
 });
 
 gulp.task('fonts', function() {
-    return gulp.src("src/**/*.+(eot|ttf|woff)")
+    return gulp.src("src/fonts/**/*")
         .pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('icons', function() {
-    return gulp.src("src/**/*.+(png|svg)")
+    return gulp.src("src/icons/**/*")
         .pipe(gulp.dest('dist/icons'));
 });
 
 gulp.task('scripts', function() {
-    return gulp.src("src/**/*.js")
+    return gulp.src("src/js/**/*.js")
         .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('mailer', function() {
-    return gulp.src("src/**/*.php")
+    return gulp.src("src/mailer/**/*")
         .pipe(gulp.dest('dist/mailer'));
 });
 
-gulp.task('img', function() {
-    return gulp.src("src/**/*.+(jpg|png)")
+gulp.task('images', function() {
+    return gulp.src("src/img/**/*")
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'img', 'mailer', 'icons', 'fonts', 'scripts', 'html'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'images', 'mailer', 'icons', 'fonts', 'scripts', 'html'));
